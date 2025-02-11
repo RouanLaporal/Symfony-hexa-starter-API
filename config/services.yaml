@@ -18,11 +18,11 @@ services:
         exclude:
             - '../src/Domain/Entity/'
     Infrastructure\:
-        resource: '../src/Infrastruture'
+        resource: '../src/Infrastructure'
         exclude:
             - '../src/Kernel.php'
     Infrastructure\Symfony\Controller\:
-        resource: '../src/Infrastruture/Symfony/Controller'
+        resource: '../src/Infrastructure/Symfony/Controller'
         tags: ['controller.service_arguments']
 
     # add more service definitions when explicit configuration is needed
